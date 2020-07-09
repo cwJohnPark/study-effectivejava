@@ -1,4 +1,12 @@
 package me.cwpark.chapter2.item3;
 
-public class ElvisEnum {
+/**
+ * Enum singleton - the preferred approach
+ */
+public enum ElvisEnum {
+    INSTANCE;
+
+    public void leaveTheBuilding() {
+    }
+
 }

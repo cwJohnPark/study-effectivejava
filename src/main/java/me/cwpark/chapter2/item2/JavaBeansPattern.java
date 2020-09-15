@@ -2,8 +2,6 @@ package me.cwpark.chapter2.item2;
 
 class JavaBeansPattern {
     public static void main(String[] args) {
-        // Require many parameters that you don't want to set
-
         // May be in an inconsistent state
         NutritionFactsJavaBeansPattern cocaCola = new NutritionFactsJavaBeansPattern();
         cocaCola.setServingSize(240);

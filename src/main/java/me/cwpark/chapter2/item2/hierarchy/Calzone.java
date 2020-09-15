@@ -17,6 +17,10 @@ public class Calzone extends Pizza {
             return this;
         }
 
+        /*
+         * Covariant return typing,
+         * the subclass method is declared to return a subtype of the return type declared in the super-class.
+         */
         @Override
         public Calzone build() {
             return new Calzone(this);

@@ -42,7 +42,7 @@ public class StaticFactoryMethods {
     }
 
     /**
-     * 4. The class of the returned object can vaay from call to call as function of the input parameters.
+     * 4. The class of the returned object can vary from call to call as function of the input parameters.
      */
     public void enumSet() {
         // It returns an instance of one of two subclasses, depending on the size of the underlying enum type.

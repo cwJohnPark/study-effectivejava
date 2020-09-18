@@ -1,11 +1,11 @@
 
 # Effective Java Study Note
 
-## Creating and Destroying Objects
+## A. Creating and Destroying Objects
 
 ### Item 1 Static Factory Methods
 
-### Item 2 BuilderPattern
+### Item 2 Builder Pattern
 
 ### Item 3 Singleton class
 

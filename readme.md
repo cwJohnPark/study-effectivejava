@@ -9,5 +9,8 @@
 
 ### Item 3 Singleton class
 
-### Item 4 Dependency Injection 
+### Item 4 Noninstantiability.
 
+### Item 5 Dependency Injection
+
+### Item 6 Avoid Unnecessary Objects

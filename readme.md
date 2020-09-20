@@ -16,3 +16,5 @@
 ### Item 6 Avoid Unnecessary Objects
 
 ### Item 7 Eliminate Obsolete Object References
+
+### Item 8 Avoid finalizers and cleaners

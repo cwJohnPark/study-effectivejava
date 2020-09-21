@@ -18,3 +18,7 @@
 ### Item 7 Eliminate Obsolete Object References
 
 ### Item 8 Avoid finalizers and cleaners
+
+## B. Methods Common to All Objects
+
+### Item 10 The General Contract on Equals Method

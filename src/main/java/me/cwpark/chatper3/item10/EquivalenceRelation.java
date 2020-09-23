@@ -57,11 +57,6 @@ public class EquivalenceRelation {
         }
     }
 
-    /*
-     * Transitive: For any non-null reference values x,y,z
-     *  if x.equals(y) returns true and y.equals(z) returns true,
-     *  then x.equals(z) must return true
-     */
 
     /*
      * Consistent: For any non-null reference values x and y,

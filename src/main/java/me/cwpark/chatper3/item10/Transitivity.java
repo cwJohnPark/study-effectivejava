@@ -13,11 +13,18 @@ public class Transitivity {
         Point p = new Point(1, 2);
         ColorPoint cp = new ColorPoint(1, 2, Color.RED);
 
-        boolean bool1 = p.equals(cp);// returns true
-        boolean bool2 = cp.equals(p);// return false
+        boolean bool1 = p.equals(cp);
+        boolean bool2 = cp.equals(p);
+
         System.out.println(bool1);
         System.out.println(bool2);
+
+        ColorPoint p1 = new ColorPoint(1, 2, Color.RED);
+        Point p2 = new Point(1, 2);
+        ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
+
     }
+
     private static class Point {
         private final int x;
         private final int y;
@@ -46,8 +53,13 @@ public class Transitivity {
 
         // Broken - violates symmetry!
         @Override public boolean equals(Object o) {
-            if (!(o instanceof ColorPoint))
+            if (!(o instanceof Point))
                 return false;
+
+            // If o is a normal Point, do a color-blind comparison
+            if (!(o instanceof ColorPoint))
+                return o.equals(this);
+
             return super.equals(o) && ((ColorPoint) o).color == color;
         }
 
@@ -58,6 +70,6 @@ public class Transitivity {
     }
 
     enum Color {
-        RED
+        RED, BLUE
     }
 }

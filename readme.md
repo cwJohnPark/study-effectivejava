@@ -9,7 +9,7 @@
 
 ### Item 3 Singleton Class
 
-### Item 4 Noninstantiability Using A Private Constructor
+### Item 4 Noninstantiability with A Private Constructor
 
 ### Item 5 Dependency Injection
 

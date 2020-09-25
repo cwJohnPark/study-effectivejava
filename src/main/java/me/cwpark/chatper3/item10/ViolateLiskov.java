@@ -3,7 +3,7 @@ package me.cwpark.chatper3.item10;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Liskov {
+public class ViolateLiskov {
 
     public static void main(String[] args) {
         // The onUnitCircle method will return false regardless of the CounterPoint instance's x and y coordinates
@@ -33,6 +33,7 @@ public class Liskov {
 
         // Broken - violates Liskov substitution
         @Override public boolean equals(Object o) {
+            // getClass-based equals method violates Liskov substitution principle
             if (!(o instanceof Point) || o.getClass() != getClass())
                 return false;
             Point p = (Point) o;

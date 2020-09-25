@@ -1,5 +1,5 @@
 
-# Effective Java Study Note
+# Effective Java Study Note 🎯
 
 ## A. Creating and Destroying Objects
 
@@ -7,9 +7,9 @@
 
 ### Item 2 Builder Pattern
 
-### Item 3 Singleton class
+### Item 3 Singleton Class
 
-### Item 4 Noninstantiability.
+### Item 4 Noninstantiability Using A Private Constructor
 
 ### Item 5 Dependency Injection
 
@@ -18,6 +18,8 @@
 ### Item 7 Eliminate Obsolete Object References
 
 ### Item 8 Avoid finalizers and cleaners
+
+### Item 9 try-with-resources rather than try-finally
 
 ## B. Methods Common to All Objects
 

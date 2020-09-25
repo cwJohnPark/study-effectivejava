@@ -17,9 +17,9 @@
 
 ### Item 7 Eliminate Obsolete Object References
 
-### Item 8 Avoid finalizers and cleaners
+### Item 8 Avoid Finalizers and Cleaners
 
-### Item 9 try-with-resources rather than try-finally
+### Item 9 Try-With-Resources Rather Than Try-Finally
 
 ## B. Methods Common to All Objects
 

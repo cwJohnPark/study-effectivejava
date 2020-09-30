@@ -1,7 +1,6 @@
-package me.cwpark.chatper3.item10;
+package me.cwpark.chapter3.item10;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 import java.util.regex.Pattern;
 

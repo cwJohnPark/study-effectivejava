@@ -1,4 +1,4 @@
-package me.cwpark.chatper3.item10;
+package me.cwpark.chapter3.item10;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;

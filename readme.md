@@ -24,3 +24,5 @@
 ## B. Methods Common to All Objects
 
 ### Item 10 The General Contract on Equals Method
+
+### Item 11 Always Override HashCode When You Override Equals

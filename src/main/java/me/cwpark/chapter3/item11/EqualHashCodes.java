@@ -2,6 +2,7 @@ package me.cwpark.chapter3.item11;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /*
  * Equal objects must have equal hash codes
@@ -43,6 +44,40 @@ final class PhoneNumber { // final class
         return areaCode == pn.areaCode &&
                 prefix == pn.prefix &&
                 lineNum == pn.lineNum;
+    }
+
+    /*
+     * Typical hashCode method
+     * A perfectly good hashCode implementation
+     * , which means reasonable job of dispersing unequal phone numbers into different hash buckets
+     */
+    @Override public int hashCode() {
+        int result = Short.hashCode(areaCode);
+        result = 31 * result + Short.hashCode(prefix);
+        result = 31 * result + Short.hashCode(lineNum);
+        return result;
+    }
+
+    // Not a recommended way of hashCode when performance is critical
+    public int hashCode_oneline() {
+        return Objects.hash(lineNum, prefix, areaCode);
+    }
+
+    /*
+     * Lazily Initialize
+     * hashCode method with lazily initialized cached hash code
+     */
+    private int hashCode; // Automatically initialized to 0
+
+    public int hashCode_lazilyInitialized() {
+        int result = hashCode;
+        if (result == 0) {
+            result = Short.hashCode(areaCode);
+            result = 31 * result + Short.hashCode(prefix);
+            result = 31 * result + Short.hashCode(lineNum);
+            hashCode = result;
+        }
+        return result;
     }
 }
 

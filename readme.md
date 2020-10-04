@@ -28,3 +28,5 @@
 ### Item 11 Always Override HashCode When You Override Equals
 
 ### Item 12 Always Override ToString
+
+### Item 13 Override clone judiciously
